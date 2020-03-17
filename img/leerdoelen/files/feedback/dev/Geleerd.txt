@@ -1,0 +1,6 @@
+Wat heb ik geleerd:
+Flexbox                                 ->      zie Flexbox
+Interactive image gallery               ->      zie Flexbox
+
+Waar ben ik nog mee bezig:
+Interactive logo                        ->      zie interactive logo

@@ -1,0 +1,101 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  /* height: auto; */
+  /* width: 100vw; */
+  background-color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  font-size: 38px;
+  color: #1B1B1B;
+  font-weight: 300;
+}
+
+.opdrachtLijst {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: DodgerBlue; */
+}
+
+.opdrachtLijst > div {
+  /* background-color: #f1f1f1; */
+  /* width: 100px; */
+  margin: 20px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 25px;
+}
+
+.opdrachtLijst > div > a:link {
+  text-decoration: none;
+}
+.opdrachtLijst > div > a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+.opdrachtLijst > div > a:hover {
+  text-decoration: none;
+  color: #cccccc;
+}
+.opdrachtLijst > div > a:active {
+  text-decoration: none;
+  color: #cccccc;
+}
+/* STICKYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* padding-top: 102px; */
+}
+
+
+.containerOpdrachten {
+  /* margin-top: 40vh; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.containerOpdrachten > div {
+  background-color: #f1f1f1;
+  width: 90vw;
+  margin: 10px;
+  /* text-align: center; */
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.opdrachtBox{
+  padding: 40px;
+}
+
+.containerOpdrachten > div > .titleOpdracht {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 0px;
+}
+.containerOpdrachten > div > .textOpdracht {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0;
+}
+.containerOpdrachten > div > .textLeerdoel {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: normal;
+  font-style: italic;
+  margin: 0;
+  margin-top: 25px;
+}
