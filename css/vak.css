@@ -99,6 +99,12 @@ body {
   /* margin: 0; */
   margin-top: 25px;
 }
+.containerOpdrachten > div > .textTitle {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 200%;
+  margin: 0px;
+}
 
 .divProgressie{
   height: auto;
@@ -115,4 +121,8 @@ body {
 }
 .divProgressie2{
   margin-left: 50px;
+}
+
+.textOpdracht > img {
+  margin: 10px 25px 10px 25px;
 }
