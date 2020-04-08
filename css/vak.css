@@ -17,6 +17,7 @@ body {
   font-size: 38px;
   color: #1B1B1B;
   font-weight: 300;
+  text-align: center;
 }
 
 .opdrachtLijst {
@@ -36,18 +37,18 @@ body {
 }
 
 .opdrachtLijst > div > a:link {
-  text-decoration: none;
+  text-decoration: underline;
 }
 .opdrachtLijst > div > a:visited {
-  text-decoration: none;
+  text-decoration: underline;
   color: #000000;
 }
 .opdrachtLijst > div > a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: #cccccc;
 }
 .opdrachtLijst > div > a:active {
-  text-decoration: none;
+  text-decoration: underline;
   color: #cccccc;
 }
 /* STICKYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY */
@@ -123,6 +124,89 @@ body {
   margin-left: 50px;
 }
 
-.textOpdracht > img {
+/* .textOpdracht > img {
   margin: 10px 25px 10px 25px;
+} */
+
+
+
+/* THIS IS THE PART FOR THE IMAGES GALERY THING INSIDE OF A LEERDOEL */
+div.textGalery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: #fff; */
+}
+div.textGaleryBlock {
+  background-color: #f1f1f1;
+  /* width: 25%; */
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+div.textGaleryItem {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: center;
+    /* The width of the container also implies margin around the images. */
+    /* width: 90%; */
+    margin: 10px 25px 10px 25px;
+}
+img {
+    width: 200px;
+    height: auto;
+    background-color: grey;
+}
+.textGalerySpan {
+    /* Make the caption a block so it occupies its own line. */
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: normal;
+    font-style: italic;
+}
+
+/* Back button */
+.backbutton {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+.backbutton:visited{
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+/* Header */
+div.header {
+  width: 100%;
+  display: flex;
+}
+div.menu {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.headerTitle {
+  width: 60%;
+}
+div.header > div.menu > a, a:visited {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: normal;
+  margin: 10px;
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+/* Files */
+.containerOpdrachten > div > .textFile {
+font-size: 25px;
+font-weight: 300;
+line-height: normal;
+text-align: center;
 }

@@ -8,40 +8,81 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <link rel="stylesheet" href="css/styleVak.css"> -->
   <link rel="stylesheet" href="css/vak.css">
 </head>
 
 <body>
   <div class="container" > <!-- id="stickyHeader" -->
-    <h1 class="title">Example</h1>
+    <div class="header">
+
+      <div class="menu">
+        <a href=""><i class="fa fa-arrow-left"></i></a>
+        <a href="portfolio.html"><i class="fa fa-home"></i></a>
+        <a href=""><i class="fa fa-arrow-right"></i></a>
+      </div>
+
+      <div class="headerTitle"><h1 class="title">Example</h1></div>
+      <div class="menu"></div>
+    </div>
+
       <div class="opdrachtLijst">
-        <div><a href="">Opdracht 1</a></div>
-        <div><a href="">Opdracht 2</a></div>
-        <div><a href="">Opdracht 3</a></div>
+        <div><a href="#1">Opdracht 1</a></div>
+        <div><a href="#2">Opdracht 2</a></div>
+        <div><a href="#3">Opdracht 3</a></div>
       </div>
   </div>
 
   <div class="containerOpdrachten">
-      <div class="opdrachtBox">
-          <p class="titleOpdracht">naam opdracht 1</p>
+      <div class="opdrachtBox" id="1">
+          <p class="titleOpdracht">naam opdracht 1</p><hr>
           <p class="textOpdracht">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <!-- image gallery -->
+                    <div class="textGalery">
+                      <div class="textGaleryBlock">
+                        <div class="textGaleryItem"><img src="/img/placeholder.png" alt="placeholder" style="width:200px;"><span class="textGalerySpan">Iteratie 1</span></div>
+                      </div>
+                      <div class="textGaleryBlock">
+                        <div class="textGaleryItem"><img src="/img/placeholder.png" alt="placeholder" style="width:200px;"><span class="textGalerySpan">Iteratie 2</span></div>
+                      </div>
+                      <div class="textGaleryBlock">
+                        <div class="textGaleryItem"><img src="/img/placeholder.png" alt="placeholder" style="width:200px;"><span class="textGalerySpan">Iteratie 2</span></div>
+                      </div>
+                      <div class="textGaleryBlock">
+                        <div class="textGaleryItem"><img src="/img/placeholder.png" alt="placeholder" style="width:200px;"><span class="textGalerySpan">Iteratie 2</span></div>
+                      </div>
+                      <div class="textGaleryBlock">
+                        <div class="textGaleryItem"><img src="/img/placeholder.png" alt="placeholder" style="width:200px;"><span class="textGalerySpan">Iteratie 2</span></div>
+                      </div>
+                      <div class="textGaleryBlock">
+                        <div class="textGaleryItem"><img src="/img/placeholder.png" alt="placeholder" style="width:200px;"><span class="textGalerySpan">Iteratie 2</span></div>
+                      </div>
+                      <div class="textGaleryBlock">
+                        <div class="textGaleryItem"><img src="/img/placeholder.png" alt="placeholder" style="width:200px;"><span class="textGalerySpan">Iteratie 2</span></div>
+                      </div>
+                    </div>
+          <!-- end image gallery -->
+          <p class="textFile"><i class="fa fa-file-text-o"></i> <a href="files/vak/bestand.pdf">Bestand 1</a> <i class="fa fa-file-text-o"></i> <a href="files/vak/bestand.pdf">Bestand 2</a></p><hr>
           <p class="textLeerdoel"><b>Communicatie:</b> De student rapporteert middels correct taalgebruik, zorgt voor logisch gestructureerde documenten en hanteert bronvermelding middels APA-stijl. De student kan zijn werk op een overtuigende manier presenteren en er vragen over beantwoorden.</p>
           <div class="divProgressie"><div class="divProgressie1"><p class="textProgressie">Satisfactory: ✔️</p></div><div class="divProgressie2"><p class="textProgressie">Good: 0%</p></div></div>
       </div>
 
+      <div class="opdrachtBox" id="2">
+          <p class="titleOpdracht">titel</p>
+          <p class="textOpdracht">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="textLeerdoel">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="divProgressie"><div class="divProgressie1"><p class="textProgressie">Satisfactory: ✔️</p></div><div class="divProgressie2"><p class="textProgressie">Good: ✔️</p></div></div>
+      </div>
 
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div>7</div>
-      <div>8</div>
-      <div>9</div>
-      <div>10</div>
-      <div>11</div>
-      <div>12</div>
+      <div class="opdrachtBox" id="3">
+          <p class="titleOpdracht">titel</p>
+          <p class="textOpdracht">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="textLeerdoel">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="divProgressie"><div class="divProgressie1"><p class="textProgressie">Satisfactory: ✔️</p></div><div class="divProgressie2"><p class="textProgressie">Good: ✔️</p></div></div>
+      </div>
+
+
   </div>
 
 
