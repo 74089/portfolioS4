@@ -55,9 +55,26 @@
           <p class="textFile"><i class="fa fa-github"></i> <a href="https://github.com/74089/ArduinoLine">GitHub Repo</a></p><hr>
           <p class="textOpdracht">
             Dit is het eerste project dat ik gemaakt heb waarbij ik het modulair probeerde te maken, ik heb dit gekregen door de hele tijd te denken: "Gaat dit ergens problemen veroorzaken als ik het ergens anders implementeer". Ook heb ik de basis van canvas geleerd, hierin had ik ook nog geen ervaring.
-          </p>
+          </p><hr>
+          <p class="textTitle">Arduino SVG</p>
+          <p class="textOpdracht">De vorige versie hiervan was via canvas, als ik het met canvas had gedaan was er geen makkelijke mogelijkheid om de lijntjes op de juiste punten te laten snappen.</p>
+          <p class="textTitle">Feedback 1</p>
+          <p class="textOpdracht">Misschien zou je naar SVG kunnen kijken en het via SVG punten aan elkaar verbinden.</p>
+          <p class="textTitle">Feedback 2</p>
+          <p class="textOpdracht">Op het moment dat ik deze feedback kreeg had ik een Arduino bordje als SVG maar nog geen functionaliteit. Ik had ook al geoefend met lijntjes trekken op een grid. https://jsfiddle.net/u8qy19ms/3/# Maar dit is later niet gebruikt.</p>
+          <p class="textOpdracht">Je kan makkelijk SVG manipuleren net zoals een canvas via een library die Raphaël heet.</p>
+          <p class="textTitle">Feedback 3</p>
+          <p class="textOpdracht">Op het moment dat ik deze feedback kreeg had ik het probleem dat de lijntjes niet op de punt van je muis kwamen terwijl dat wel de bedoeling was.</p>
+          <p class="textOpdracht">In de SVG had ik een viewbox gedefinieerd en die bleek mijn muis coördinaten helemaal verkeerd te pakken. Gelukkig wist mijn leraar welke woorden hij in stack overflow moest typen om een makkelijk antwoord te krijgen. https://stackoverflow.com/questions/10298658/mouse-position-inside-autoscaled-svg</p>
+          <p class="textOpdracht">Nadat dat geïmplementeerd was werkte de lijntjes hoe ik wilde maar de lijntjes kwamen achter het Arduino SVG’tje, dit is opgelost door de SVG in een functie te zetten en die aan te roepen voor de layer waar je al de lijntjes op tekent.</p>
+          <p class="textTitle">Wat heb ik er geleerd</p>
+          <p class="textOpdracht">•	Met SVG’s werken</p>
+          <p class="textOpdracht">•	SVG viewbox</p>
+          <p class="textOpdracht">•	Paar functies in de Raphaël JS library</p>
+          <p class="textTitle">Conclusie </p>
+          <p class="textOpdracht">Er zijn meestal meerdere antwoorden mogelijk als het om programmeren gaat, maar om jezel het makkelijkste te maken moet je de simpelste weg nemen. De simpelste weg in dit geval was met een paar bochten waar ik nog geen ervaring mee had. Deze bochten, met name SVG en Raphaël, waren een zeer leerzame ervaring en het is goed dat ik weet dat ze bestaan en dat ik weet hoe ze gebruikt worden als ik ze nog een keer nodig heb.</p><hr>
           <p class="textLeerdoel">De student heeft een applicatie gerealiseerd met een module pattern. Externe libraries zijn gebruikt om de applicatie te ontwerpen. De applicatie is tot stand gekomen via user stories en een schets van de architectuur. </p>
-          <div class="divProgressie"><div class="divProgressie1"><p class="textProgressie">Satisfactory: ✔️</p></div><div class="divProgressie2"><p class="textProgressie">Good: 0%</p></div></div>
+          <div class="divProgressie"><div class="divProgressie1"><p class="textProgressie">Satisfactory: ✔️</p></div><div class="divProgressie2"><p class="textProgressie">Good: ✔️</p></div></div>
       </div>
 
       <div class="opdrachtBox" id="2">
