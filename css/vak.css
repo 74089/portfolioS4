@@ -163,7 +163,7 @@ div.textGaleryItem {
 img {
     width: 200px;
     height: auto;
-    background-color: grey;
+    /* background-color: grey; */
 }
 .textGalerySpan {
     /* Make the caption a block so it occupies its own line. */
