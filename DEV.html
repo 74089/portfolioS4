@@ -67,12 +67,43 @@
           <p class="textOpdracht">Op het moment dat ik deze feedback kreeg had ik het probleem dat de lijntjes niet op de punt van je muis kwamen terwijl dat wel de bedoeling was.</p>
           <p class="textOpdracht">In de SVG had ik een viewbox gedefinieerd en die bleek mijn muis coördinaten helemaal verkeerd te pakken. Gelukkig wist mijn leraar welke woorden hij in stack overflow moest typen om een makkelijk antwoord te krijgen. https://stackoverflow.com/questions/10298658/mouse-position-inside-autoscaled-svg</p>
           <p class="textOpdracht">Nadat dat geïmplementeerd was werkte de lijntjes hoe ik wilde maar de lijntjes kwamen achter het Arduino SVG’tje, dit is opgelost door de SVG in een functie te zetten en die aan te roepen voor de layer waar je al de lijntjes op tekent.</p>
+          <div class="textGalery">
+            <div class="textGaleryBlock">
+              <div class="textGaleryItem"><img src="img/dev/userstory.png" alt="userstory" style="width:800px;"><span class="textGalerySpan">Het begin van de Arduino Module kwam allemaal uit deze user story.</span></div>
+            </div>
+          </div>
+          <p class="textOpdracht">Het eerste prototype dat ik maakte was heel simpel door een canvas over een plaatje te zetten en daarop lijntjes te laten tekenen. Ik ben vrij snel van dit idee afgestapt omdat er geen mogelijkheid was om de lijntjes vanuit de puntjes van het breadboard te laten komen.</p>
+          <p class="textOpdracht">Mijn docent had me gerecommandeerd om naar Rapheal.js te kijken omdat je daar SVG’s mee kunt manipuleren en zo de coördinaten van een punt in de SVG met een andere kunt koppelen en zo de lijnen op de juiste punten kunt krijgen.</p>
+          <p class="textOpdracht">Door wat tijdsnood en moeilijkheden hebben ik dat jammer genoeg niet meer kunnen implementeren. Ik had een keuze gemaakt om te werken om de functie zo modulair mogelijk te maken aangezien dat een leerdoel was, dit is verder beschreven in het leerdoel “Beheerbaarheid”.</p>
+          <p class="textOpdracht">Het enige in de html van de module is de volgende lijn, deze lijn is om een plaats te creëren op de website voor de SVG.</p>
+          <div class="textGalery">
+            <div class="textGaleryBlock">
+              <div class="textGaleryItem"><img src="img/dev/html.png" alt="html" style="width:800px;"><span class="textGalerySpan">Paper aanmaken in de HTML</span></div>
+            </div>
+          </div>
+          <p class="textOpdracht">Ik heb een speciaal javascript bestand aangemaakt voor de module waarin ik de functies heb gezet. Dit zorgt ervoor dat de code modulair blijft en we een gedeelte van de functie kunnen aanroepen in het main javascript bestand als dat nodig is.</p>
+          <div class="textGalery">
+            <div class="textGaleryBlock">
+              <div class="textGaleryItem"><img src="img/dev/js1.png" alt="js1" style="width:800px;"><span class="textGalerySpan">Modulair arduino.js</span></div>
+            </div>
+          </div>
+
+          <p class="textOpdracht">De volgende lijn code staat in het main javascript bestand. Hierin wordt het SVG bestand ingeladen als de pagina geladen is en wordt de lijn teken functie aangeroepen zodra er ergens binnen de SVG wordt gedrukt.</p>
+          <p class="textOpdracht">Als ik meer tijd had gehad, dan had ik het lijn teken gedeelte ook modulair gemaakt en uit het main javascript bestand gehaald.</p>
+          <div class="textGalery">
+            <div class="textGaleryBlock">
+              <div class="textGaleryItem"><img src="img/dev/js2.png" alt="js2" style="width:800px;"><span class="textGalerySpan">arduino.js functies aanroepen in het main js bestand</span></div>
+            </div>
+          </div>
+          <p class="textOpdracht">Dit semester was de eerste keer dat ik modules echt modulair probeerde te programmeren. Hierdoor vond ik het best moeilijk maar gelukkig had een ik fijne groepsgenoot die mij de basis principes kon uitleggen doormiddel van een snelle les te geven in zijn code. Toen ik het voor mijzelf ging proberen had ik zijn code erlangs gehouden om de opstelling te zien. Op zich was het redelijk goed te doen, alleen moest ik opletten dat ik  de functies aanmaakte onder de Arduino variabele als: [Naam van de functie]: function ([optionele variabele]){[Code]}.</p>
           <p class="textTitle">Wat heb ik er geleerd</p>
           <p class="textOpdracht">•	Met SVG’s werken</p>
           <p class="textOpdracht">•	SVG viewbox</p>
           <p class="textOpdracht">•	Paar functies in de Raphaël JS library</p>
           <p class="textTitle">Conclusie </p>
-          <p class="textOpdracht">Er zijn meestal meerdere antwoorden mogelijk als het om programmeren gaat, maar om jezel het makkelijkste te maken moet je de simpelste weg nemen. De simpelste weg in dit geval was met een paar bochten waar ik nog geen ervaring mee had. Deze bochten, met name SVG en Raphaël, waren een zeer leerzame ervaring en het is goed dat ik weet dat ze bestaan en dat ik weet hoe ze gebruikt worden als ik ze nog een keer nodig heb.</p><hr>
+          <p class="textOpdracht">Er zijn meestal meerdere antwoorden mogelijk als het om programmeren gaat, maar om jezel het makkelijkste te maken moet je de simpelste weg nemen. De simpelste weg in dit geval was met een paar bochten waar ik nog geen ervaring mee had. Deze bochten, met name SVG en Raphaël, waren een zeer leerzame ervaring en het is goed dat ik weet dat ze bestaan en dat ik weet hoe ze gebruikt worden als ik ze nog een keer nodig heb.</p>
+          <p class="textFile"><i class="fa fa-github"></i> <a href="https://git.fhict.nl/I424180/brainport">GitLab Repo</a></p>
+          <hr>
 
 
           <p class="textTitle">Architectuur diagram</p>
@@ -124,7 +155,18 @@
             </div>
           </div>
           <p class="textTitle">README</p>
-          <p class="textOpdracht">Komt nog.</p>
+          <p class="textOpdracht">Voor de README.md maken heb ik gebruik gemaakt van de online tool <a href="https://www.makeareadme.com/" target="blank">makeareadme.com</a>. Hierin heb ik mijn gedeelte van de README.md uitgeschreven en op de juiste plek geplakt van onze README.md.</p>
+          <p class="textOpdracht">Het starten allemaal met de naam van de functie te schrijven op de juiste plek, omdat een teamgenoot van mij zijn gedeelte al beschreven had in de README moest ik mijn gedeelte nog even toevoegen, toen ik het had gevonden begon ik met een kleine achtergrond verhaaltje te schrijven van wat het idee was en wat het moest doen.</p>
+          <p class="textOpdracht">Vervolgens schreef ik het installatie gedeelte. Aangezien het een modulaire functie was kon je alleen mijn module installeren, ik had dat dus in een klein stappenplan genoteerd.</p>
+          <p class="textOpdracht">Vervolgens had ik nog het ‘usage’ stukje ingevuld waarin de mensen konden zien welke waardes ze konden veranderen zonder dat de applicatie breekt en wat die veranderingen zullen doen.</p>
+          <p class="textOpdracht">Ik hoefde geen license toe te voegen want dat had mijn teamgenoot al gedaan. Het contributie gedeelte had ik toegevoegd bij de al bestaande contributie zodat het op de juiste plek blijft staan. Ik had niet de hele module kunnen uitwerken vanwege tijdsnood dus ik heb duidelijk beschreven onder het contributie gedeelte wat er nog toegevoegd kan worden.</p>
+          <div class="textGalery">
+            <div class="textGaleryBlock">
+              <div class="textGaleryItem"><img src="img/dev/readme.png" alt="readme" style="width:800px;"><span class="textGalerySpan">Mijn gedeelte van de README</span></div>
+            </div>
+          </div>
+          <p class="textFile"><i class="fa fa-github"></i> <a href="https://git.fhict.nl/I424180/brainport/-/blob/master/README.md" target="blank">GitLab README.md</a></p>
+          <hr>
           <p class="textTitle">Reflectie</p>
           <p class="textOpdracht">Met Git heb ik al zeer veel ervaring. Voor dit semester had ik nog geen ervaring met GitLab. Zelf gebruikte ik altijd GitHub omdat ik daar de pro versie van heb door mijn vorige studie. Ik en mijn groepje moesten GitLab gebruiken omdat de docenten dat verplichten. Ik was op het begin geen fan van GitLab omdat ik er niet naar toe kan pushen vanuit mijn IDE. Dit leverde frustraties op. Ik had het opgelost door GitKraken te gebruiken op suggestie van een groepsgenoot van mij. Het probleem van GitKraken was dat het maar voor een week gratis was voor een company GitLab omgeving. Toen dit gebeurde was het al vrij laat in het semester dus ik besloot maar om alle bestanden te uploaden vanuit git.fhict.nl.</p>
           <p class="textTitle">Conclusie</p>
@@ -144,11 +186,67 @@
             Er zijn ook heel veel packages gemaakt door de community (een package in Atom is het zelfde als een package in VScode). Een van die packages heet Git-log, als je het opent mag je een van je repos kiezen om vervolgens een overzichtelijke lijn van alle branches en commits te zien. Door deze package ben ik gestopt met GitKraken te gebruiken en volledig overgestapt op allen Atom.
             Ik heb ook nog veel meer packages die <a href="https://stefvanderburgt.stackstorage.com/s/6JovOGJKT0oLoK7">hier</a> te zien zijn.
           </p>
+          <hr>
+          <p class="textTitle">Atom - packages & explanation</p>
+          <p class="textOpdracht">
+            •	Quick-JavaScript<br>
+            &emsp;o	Packages voor javascript voorspellingen<br>
+            •	atom-beautify<br>
+            &emsp;o	Zelfde als code prettier voor vscode<br>
+            •	atom-clock<br>
+            &emsp;o	Rechts onder kan je zien hoelaat het is<br>
+            •	atom-live-server<br>
+            &emsp;o	Ingebouwde live server zodat ik geen MAMP of XAMPP hoef te gebruiken<br>
+            •	atom-sass<br>
+            &emsp;o	Support voor sass, ik heb dit niet gebruikt dit semester<br>
+            •	atom-terminal<br>
+            &emsp;o	Gebruikt voor npm’s installs en git clones van gitlab<br>
+            •	auto-close-html2<br>
+            &emsp;o	Bijvoorbeeld: Typt automatisch als je typt<br>
+            •	bracket-colorizer<br>
+            &emsp;o	Doet het zelfde als de vscode versie, gebruik ik om een goed overzicht te houden<br>
+            •	busy-signal<br>
+            &emsp;o	Ingebouwd, laat een loading icon zien als een bestand wordt opgeslagen<br>
+            •	es6-javascript<br>
+            &emsp;o	Automatisch aanvullen en afsluiten van javascript functies<br>
+            •	file-icons<br>
+            &emsp;o	Laat in de file tree een icoontje van het desbetreffende bestand zien. (javascript krijgt een JS icoontje, HTML en HTML5 icoontje. Raphaël.js een Raphaël.js icoontje.<br>
+            •	git-log<br>
+            &emsp;o	Een command die ik kan openen als ik overzichtelijk de branches en commits van een Git repo wil zien.<br>
+            •	highlight-selected<br>
+            &emsp;o	Als je een woord geselecteerd heb worden de andere zelfde woorden ook zichtbaar.<br>
+            •	intentions<br>
+            &emsp;o	Om eerlijk te zijn geen idee, zit automatisch bij Atom.<br>
+            •	language-babel<br>
+            &emsp;o	Zit automatisch bij Atom maar het corrigeert javascript functie taal fouten.<br>
+            •	linter<br>
+            &emsp;o	Linter helpt bij debuggen van verschillende talen.<br>
+            •	linter-ui-default<br>
+            &emsp;o	Linter helpt bij debuggen van verschillende talen.<br>
+            •	pigments<br>
+            &emsp;o	Als je een kleur aangeeft dan toont pigments die in de code zodat je meteen een idee krijgt van hoe de kleur er uit zien.<br>
+            •	todo-show<br>
+            &emsp;o	Todo show heb ik dit semester niet gebruikt maar het is een ingebouwde pagina die wordt geopend en er op staat alle todo punten van je git repo.<br>
+          </p>
+          <div class="textGalery">
+            <div class="textGaleryBlock">
+              <div class="textGaleryItem"><img src="img/dev/atom1.png" alt="atom1" style="width:400px;"><span class="textGalerySpan">De file-icons package</span></div>
+            </div>
+            <div class="textGaleryBlock">
+              <div class="textGaleryItem"><img src="img/dev/atom2.png" alt="atom2" style="width:600px;"><span class="textGalerySpan">De git-log package</span></div>
+            </div>
+            <div class="textGaleryBlock">
+              <div class="textGaleryItem"><img src="img/dev/atom3.png" alt="atom3" style="width:400px;"><span class="textGalerySpan">de pigments package</span></div>
+            </div>
+          </div>
+          <hr>
           <p class="textTitle">Microsoft Teams</p>
           <p class="textOpdracht">Door de omstandigheden met Corona-virus hebben we het project moeten verplaatsen naar een online werkomgeving. Dit is goed gelukt en in mijn geval ook wat fijner in verband met lange reistijd.</p>
           <p class="textOpdracht"><a onclick="window.open('https://teams.microsoft.com/l/team/19%3aade9475b69fb4d658486784c322dfb7e%40thread.tacv2/conversations?groupId=21413bb8-5689-4391-8e11-c485832ee44c&amp;tenantId=c66b6765-b794-4a2b-84ed-845b341c086a');">Teams Link</a></p>
+          <hr>
           <p class="textTitle">GitLab</p>
           <p class="textOpdracht">Voor school moesten we verplicht GitLab gebruiken. Mijn ervaring met GitLab staat hierboven geschreven bij het kopje beheerbaarheid.</p>
+          <hr>
           <p class="textTitle">Libraries & Implementatie</p>
           <p class="textOpdracht">Jquery gebruik ik al langer maar ik heb gedurende dit semester geen nieuwe functionaliteiten ontdekt maar ik heb de bekende functies nog wel veel gebruikt.</p>
           <p class="textOpdracht">Raphaël had ik hiervoor nog nooit gebruikt en ook nog nooit van gehoord. Een leraar gaf het als suggestie nadat ik hem mijn opdracht vertelt had en uitgelegd had wat ik wilde doen. Alles wat ik heb gedaan staat beschreven bij het architectuur leerdoel. Ik vind het nuttig dat ik weet wat Raphaël toe in staat is en zal het in de toekomst zeker weer benutten als ik SVG’s moet manipuleren.</p>
